@@ -12,5 +12,7 @@ namespace BurgerPlace.Models
         public bool Destaque {get;set;}
         public int CategoriaId {get;set;}
         public virtual Categoria Categoria{get;set;}
+        public bool EmDestaque { get; internal set; }
+
     }
 }

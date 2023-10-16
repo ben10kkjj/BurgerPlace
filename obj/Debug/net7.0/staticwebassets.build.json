@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "flIpDDnuWlM6jmIZUAryWIGrg0fpyVj+j5imptozA2s=",
+  "Hash": "mMRPUBlIoSG4dMv0YtR4Nzl6oJ/ZJaQijoucne4smCc=",
   "Source": "BurgerPlace",
   "BasePath": "_content/BurgerPlace",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\dev\\BurgerPlace\\wwwroot\\image\\Hamburger.png",
+      "SourceId": "BurgerPlace",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\dev\\BurgerPlace\\wwwroot\\",
+      "BasePath": "_content/BurgerPlace",
+      "RelativePath": "image/Hamburger.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Hamburger.png"
     },
     {
       "Identity": "C:\\dev\\BurgerPlace\\wwwroot\\js\\site.js",

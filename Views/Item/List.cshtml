@@ -1,0 +1,13 @@
+@model BurgerPlace.ViewModel.ItemListViewModel
+@{
+    ViewData["Title"] = "Items";
+}
+<h1>@Model.CategoriaAtual</h1>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model.Items)
+        {
+            <partial name="_Card" for="@item"></partial>
+        }
+    </div>
+</div>

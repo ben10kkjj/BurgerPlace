@@ -1,21 +1,28 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BurgerPlace.Models;
+using BurgerPlace.Repositories.Interfaces;
+using BurgerPlace.Repositories;
+using BurgerPlace.ViewModel;
 
 namespace BurgerPlace.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly IItemRepository _itemRepository;
+    
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(IItemRepository itemRepository)
     {
-        _logger = logger;
+        _itemRepository = itemRepository;
     }
-
     public IActionResult Index()
     {
-        return View();
+        var homeViewModel = new HomeViewModel
+        {
+            ItensEmDestaque = _itemRepository.ItensEmDestaque
+        };
+        return View(homeViewModel);
     }
 
     public IActionResult Privacy()

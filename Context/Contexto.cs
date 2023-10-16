@@ -10,5 +10,7 @@ base(options){
 }
 public DbSet<Item> Item {get;set;}
 public DbSet<Categoria> Categoria {get;set;}
-}
+public DbSet<CarrinhoItem>Items{get;set;}
+        
+    }
 }
